@@ -1,13 +1,364 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New chat</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/App.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehdi TOUIDJINI - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Mehdi TOUIDJINI</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#experience" class="nav-link">Expériences</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="profile-photo">
+                <div class="photo-border"></div>
+                <svg class="user-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <h1 class="hero-title">Mehdi TOUIDJINI</h1>
+            <p class="hero-subtitle">Étudiant en BTS SIO SLAM</p>
+            <p class="hero-description">Solutions Logicielles et Applications Métiers - 2ème année</p>
+            <div class="hero-info">
+                <div class="info-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Dugny, 93440</span>
+                </div>
+                <div class="info-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>07 81 10 12 35</span>
+                </div>
+            </div>
+            <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                Me contacter
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <h2 class="section-title">À propos</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="text-large">
+                        Déterminé, sérieux, autonome et conscient du travail qui m'attend, je suis persuadé que je serai un élément moteur au sein de votre structure.
+                    </p>
+                    <p class="text-large">
+                        Passionné par le développement web et logiciel, je conçois des applications adaptées aux besoins des utilisateurs. Mon objectif est de devenir développeur full stack et de contribuer à des projets innovants.
+                    </p>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <h3 class="card-title">Centres d'intérêt</h3>
+                        <p class="card-text">Football, Basketball, Voyages (Italie, Espagne, Angleterre), Informatique, Programmation, Musique, Jeux vidéo</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="card-title">Langues</h3>
+                        <p class="card-text">Français (Natif), Anglais (Niveau scolaire), Espagnol (Niveau scolaire)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h2 class="section-title">Compétences techniques</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3 class="skill-title">Langages</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet"></span>HTML</li>
+                        <li><span class="bullet"></span>CSS</li>
+                        <li><span class="bullet"></span>JavaScript</li>
+                        <li><span class="bullet"></span>PHP</li>
+                        <li><span class="bullet"></span>Python</li>
+                        <li><span class="bullet"></span>Java (POO)</li>
+                        <li><span class="bullet"></span>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3 class="skill-title">Frameworks</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet"></span>React</li>
+                        <li><span class="bullet"></span>Bootstrap</li>
+                        <li><span class="bullet"></span>JavaFX</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3 class="skill-title">Outils</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet"></span>Git / GitHub</li>
+                        <li><span class="bullet"></span>Suite JetBrains</li>
+                        <li><span class="bullet"></span>phpMyAdmin</li>
+                        <li><span class="bullet"></span>Microsoft 365</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3 class="skill-title">Bases de données</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet"></span>MySQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card skill-card-large">
+                    <div class="skill-icon">📋</div>
+                    <h3 class="skill-title">Méthodes</h3>
+                    <ul class="skill-list">
+                        <li><span class="bullet"></span>Développement agile</li>
+                        <li><span class="bullet"></span>Modélisation UML</li>
+                        <li><span class="bullet"></span>Gestion de projet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <h2 class="section-title">Projets</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <h3 class="project-title">Système de qualité de l'air</h3>
+                    <p class="project-description">
+                        Création d'un système de surveillance de la qualité de l'air en terminal STI2D, alliant capteurs et analyse des données en temps réel.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Capteurs</span>
+                        <span class="tag">Analyse de données</span>
+                        <span class="tag">STI2D</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <h3 class="project-title">Système d'arrêt d'urgence</h3>
+                    <p class="project-description">
+                        Développement d'un système de sécurité d'arrêt d'urgence combinant capteurs et traitement des données pour une réponse rapide.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Sécurité</span>
+                        <span class="tag">Capteurs</span>
+                        <span class="tag">STI2D</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <h2 class="section-title">Expériences professionnelles</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Stage BTS SIO SLAM - NRJ</h3>
+                                <p class="experience-subtitle">Support technique et développement</p>
+                            </div>
+                            <span class="experience-date">Mai 2025</span>
+                        </div>
+                        <p class="experience-description">
+                            Stage de première année de BTS SIO SLAM chez NRJ, au sein des services DSI, MOA, régie et audiovisuel.
+                        </p>
+                        <ul class="experience-list">
+                            <li>Support technique pour les équipes internes</li>
+                            <li>Développement d'applications métier</li>
+                            <li>Participation aux projets DSI et MOA</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Stage d'observation - NRJ</h3>
+                                <p class="experience-subtitle">Télécommunication publicitaire</p>
+                            </div>
+                            <span class="experience-date">Décembre 2019</span>
+                        </div>
+                        <p class="experience-description">
+                            Stage d'observation au sein de l'entreprise radio NRJ au poste de télécommunication publicitaire en interne.
+                        </p>
+                        <ul class="experience-list">
+                            <li>Découverte du secteur de la radiodiffusion</li>
+                            <li>Observation des processus publicitaires</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Agent polyvalent en restauration - Drimagrill</h3>
+                                <p class="experience-subtitle">Pierrefite</p>
+                            </div>
+                            <span class="experience-date">Juin 2023 - aujourd'hui</span>
+                        </div>
+                        <p class="experience-description">
+                            Gestionnaire de commande et responsable d'accueil en restauration.
+                        </p>
+                        <ul class="experience-list">
+                            <li>Gestion des commandes clients et coordination avec la cuisine</li>
+                            <li>Accueil des clients et gestion des réservations</li>
+                            <li>Service en salle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formation-section">
+                <div class="section-header">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <h3 class="subsection-title">Formation</h3>
+                </div>
+                <div class="formation-card">
+                    <ul class="formation-list">
+                        <li><strong>2023 - Aujourd'hui:</strong> BTS SIO SLAM (Solutions Logicielles et Applications Métiers)</li>
+                        <li><strong>2023:</strong> Baccalauréat STI2D (Sciences et Technologies de l'Industrie et du Développement Durable)</li>
+                        <li><strong>2024:</strong> Formation HCCP (Hygiène)</li>
+                        <li><strong>2023:</strong> BAFA (Formation complète)</li>
+                        <li><strong>2023:</strong> Certification PIX (Complète)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+            </div>
+            <p class="contact-intro">
+                N'hésitez pas à me contacter pour toute opportunité de stage, d'alternance ou de projet.
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:Mehditoudjay@gmail.com" class="contact-card contact-card-primary">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <div class="contact-info">
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">Mehditoudjay@gmail.com</div>
+                    </div>
+                </a>
+                <div class="contact-card contact-card-primary">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <div class="contact-info">
+                        <div class="contact-label">Téléphone</div>
+                        <div class="contact-value">07 81 10 12 35</div>
+                    </div>
+                </div>
+                <a href="https://github.com/votre-github" target="_blank" class="contact-card">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <div class="contact-info">
+                        <div class="contact-label">GitHub</div>
+                        <div class="contact-value">Votre profil GitHub</div>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/votre-linkedin" target="_blank" class="contact-card contact-card-primary">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <div class="contact-info">
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-value">Votre profil LinkedIn</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Mehdi TOUIDJINI - Tous droits réservés</p>
+            <p class="footer-subtitle">Portfolio professionnel - BTS SIO SLAM</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
 </html>
